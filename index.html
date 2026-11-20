@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurelia Bay Hotel — Hashamatli Sohil Mehmonxonasi</title>
+<link rel="icon" type="image/png"
+href="https://icons.iconarchive.com/icons/iconarchive/essential-buildings/256/Hotel-Pool-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="intro">
+  <div class="half top"></div><div class="half bottom"></div>
+  <div class="intro-core">
+    <svg viewBox="0 0 120 120" width="110"><circle cx="60" cy="60" r="52"/><path d="M30 78 L60 30 L90 78 M42 62 H78"/></svg>
+    <h2>AURELIA BAY</h2>
+    <div class="bar"><i id="introBar"></i></div>
+    <span id="introNum">0%</span>
+  </div>
+</div>
+
+<div id="progress"></div>
+<div id="glow"></div>
+
+<header id="nav">
+  <a href="#home" class="logo"><i class="fa-solid fa-crown"></i> Aurelia Bay</a>
+  <nav id="menu">
+    <a href="#about"><i class="fa-solid fa-compass"></i> Biz haqimizda</a>
+    <a href="#rooms"><i class="fa-solid fa-bed"></i> Xonalar</a>
+    <a href="#dining"><i class="fa-solid fa-utensils"></i> Restoran</a>
+    <a href="#facilities"><i class="fa-solid fa-spa"></i> Qulayliklar</a>
+    <a href="#offers"><i class="fa-solid fa-gift"></i> Aksiyalar</a>
+    <a href="#gallery"><i class="fa-solid fa-images"></i> Galereya</a>
+    <a href="#faq"><i class="fa-solid fa-circle-question"></i> Savollar</a>
+    <a href="#booking" class="btn small"><i class="fa-solid fa-calendar-check"></i> Band qilish</a>
+  </nav>
+  <button id="burger" aria-label="Menyu"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<section id="home" class="hero">
+  <div class="slides" id="slides"></div>
+  <div class="hero-shade"></div>
+  <div class="hero-body">
+    <p class="stars">
+      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+      <span>Besh yulduzli hashamatli dam olish maskani</span>
+    </p>
+    <h1 id="heroTitle">Dengiz shovqini bilan uyg'oning</h1>
+    <p class="lead">Aurelia Bay — 120 ta eksklyuziv xona, 3 ta cheksiz basseyn, Michelin darajasidagi restoranlar va sizga mos jim tong. Xonani 1 daqiqada band qiling.</p>
+    <form class="quick" id="quick">
+      <label><i class="fa-regular fa-calendar"></i><input type="date" id="qIn" title="Kirish sanasi"></label>
+      <label><i class="fa-regular fa-calendar-check"></i><input type="date" id="qOut" title="Chiqish sanasi"></label>
+      <label><i class="fa-solid fa-user-group"></i>
+        <select id="qGuests" title="Mehmonlar soni">
+          <option value="1">1 mehmon</option>
+          <option value="2" selected>2 mehmon</option>
+          <option value="3">3 mehmon</option>
+          <option value="4">4 mehmon</option>
+          <option value="5">5+ mehmon</option>
+        </select>
+      </label>
+      <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Bo'sh xonalarni ko'rish</button>
+    </form>
+  </div>
+  <a href="#about" class="scroll" aria-label="Pastga tushish"><i class="fa-solid fa-chevron-down"></i></a>
+</section>
+
+<div class="marquee"><div id="marquee"></div></div>
+
+<section class="stats">
+  <div><i class="fa-solid fa-door-open stat-ico"></i><b data-to="120">120+</b><span>xona va villalar</span></div>
+  <div><i class="fa-solid fa-award stat-ico"></i><b data-to="18">18+</b><span>yillik tajriba</span></div>
+  <div><i class="fa-solid fa-face-smile-beam stat-ico"></i><b data-to="4800">4,800+</b><span>mamnun mehmon</span></div>
+  <div><i class="fa-solid fa-water-ladder stat-ico"></i><b data-to="3">3+</b><span>ochiq basseyn</span></div>
+  <div><i class="fa-solid fa-utensils stat-ico"></i><b data-to="4">4+</b><span>premium restoran</span></div>
+</section>
+
+<!-- BIZ HAQIMIZDA -->
+<section id="about" class="sec dark">
+  <div class="about-grid">
+    <div class="about-imgs reveal">
+      <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=75" alt="Aurelia Bay tashqi ko'rinishi" class="img-main">
+      <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=75" alt="Aurelia Bay interyer" class="img-sub">
+      <div class="exp-badge"><i class="fa-solid fa-gem"></i><div><strong>5★</strong><span>Luxury Resort</span></div></div>
+    </div>
+    <div class="about-text reveal">
+      <span class="sub-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Aurelia Bay Tarixi</span>
+      <h2>Tabiat va zamonaviy hashamat uyg'unligi</h2>
+      <p>2008-yilda tashkil etilgan <strong>Aurelia Bay Hotel</strong> bugungi kunda sohil bo'yidagi eng nufuzli dam olish maskanlaridan biridir. Bizning maqsadimiz — har bir mehmonga shaxsiy yondashuv, mutlaq xotirjamlik va unutilmas taassurotlar taqdim etish.</p>
+      <div class="about-features">
+        <div class="af-item"><i class="fa-solid fa-umbrella-beach"></i><div><h4>Shaxsiy Oltin Sohil</h4><p>Faqat mehmonlarimiz uchun ajratilgan 1.5 km toza qumli plyaj.</p></div></div>
+        <div class="af-item"><i class="fa-solid fa-bell-concierge"></i><div><h4>24/7 Shaxsiy Butler</h4><p>Istalgan vaqtda xonangizga xizmat ko'rsatish va ekskursiyalar tashkili.</p></div></div>
+        <div class="af-item"><i class="fa-solid fa-leaf"></i><div><h4>Ekologik Toza Muhit</h4><p>100% tabiiy materiallar, organik taomlar va yashil bog'lar.</p></div></div>
+      </div>
+      <a href="#rooms" class="btn"><i class="fa-solid fa-arrow-right"></i> Xonalarni ko'rish</a>
+    </div>
+  </div>
+</section>
+
+<!-- 20 TA XONA VA VILLA KATALOGI -->
+<section id="rooms" class="sec">
+  <span class="sub-tag center"><i class="fa-solid fa-key"></i> Keng Tanlov</span>
+  <h2 class="title">Xonangiz yoki Villangizni Tanlang (20 ta variant)</h2>
+  <div class="room-controls">
+    <div class="filters" id="filters">
+      <button class="chip on" data-f="all"><i class="fa-solid fa-border-all"></i> Hammasi (20)</button>
+      <button class="chip" data-f="standart"><i class="fa-solid fa-bed"></i> Standart (5)</button>
+      <button class="chip" data-f="deluxe"><i class="fa-solid fa-star-half-stroke"></i> Deluxe (5)</button>
+      <button class="chip" data-f="suit"><i class="fa-solid fa-crown"></i> Suit (5)</button>
+      <button class="chip" data-f="villa"><i class="fa-solid fa-house-chimney"></i> Villa (5)</button>
+    </div>
+    <div class="search-box">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="roomSearch" placeholder="Xona nomi yoki qulaylik bo'yicha qidirish...">
+    </div>
+  </div>
+  <div class="grid rooms" id="roomGrid"></div>
+</section>
+
+<!-- RESTORAN VA GASTRONOMIYA -->
+<section id="dining" class="sec dark">
+  <span class="sub-tag center"><i class="fa-solid fa-champagne-glasses"></i> Gastronomiya</span>
+  <h2 class="title">Restoranlar va Sohil Barlari</h2>
+  <div class="grid dining-grid" id="diningGrid"></div>
+</section>
+
+<!-- QULAYLIKLAR -->
+<section id="facilities" class="sec">
+  <span class="sub-tag center"><i class="fa-solid fa-bell-concierge"></i> Xizmatlar</span>
+  <h2 class="title">Hammasi bir joyda</h2>
+  <div class="grid fac" id="facGrid"></div>
+</section>
+
+<!-- MAXSUS AKSIYALAR -->
+<section id="offers" class="sec dark">
+  <span class="sub-tag center"><i class="fa-solid fa-tags"></i> Maxsus Takliflar</span>
+  <h2 class="title">Mavsumiy Aksiyalar va Paketlar</h2>
+  <div class="grid offers-grid" id="offersGrid"></div>
+</section>
+
+<!-- NARXLAR -->
+<section id="prices" class="sec">
+  <span class="sub-tag center"><i class="fa-solid fa-wallet"></i> Shaffof Tariflar</span>
+  <h2 class="title">Aniq narxlar</h2>
+  <div class="toggle">
+    <span><i class="fa-solid fa-moon"></i> Bir kecha</span>
+    <button id="priceSwitch" aria-label="Narx turi"><i></i></button>
+    <span><i class="fa-solid fa-calendar-week"></i> Bir hafta <em>-15%</em></span>
+  </div>
+  <div class="grid price" id="priceGrid"></div>
+</section>
+
+<!-- GALEREYA (30 TA RASM) -->
+<section id="gallery" class="sec dark">
+  <span class="sub-tag center"><i class="fa-solid fa-camera-retro"></i> Fotogalereya</span>
+  <h2 class="title">Rasmlarda Aurelia Bay (30 ta foto)</h2>
+  <div class="masonry" id="masonry"></div>
+</section>
+
+<!-- MEHMONLAR FIKRLARI -->
+<section id="reviews" class="sec">
+  <span class="sub-tag center"><i class="fa-solid fa-comments"></i> Sharhlar</span>
+  <h2 class="title">Mehmonlar nima deydi</h2>
+  <div class="review" id="review"></div>
+  <div class="dots" id="dots"></div>
+</section>
+
+<!-- SAVOLLAR (FAQ) -->
+<section id="faq" class="sec dark">
+  <span class="sub-tag center"><i class="fa-solid fa-circle-info"></i> Yordam Markazi</span>
+  <h2 class="title">Ko'p Beriladigan Savollar</h2>
+  <div class="faq-list" id="faqList"></div>
+</section>
+
+<!-- BAND QILISH -->
+<section id="booking" class="sec book">
+  <div class="book-img">
+    <img id="bookImg" alt="Tanlangan xona">
+    <div class="live"><i class="fa-solid fa-eye"></i> Hozir <b id="viewers">7</b> kishi shu xonani ko'rmoqda</div>
+  </div>
+  <form id="bookForm" novalidate>
+    <h2><i class="fa-solid fa-bookmark"></i> Band qilish formasi</h2>
+    <div class="row">
+      <div class="field"><input id="fName" required placeholder=" "><label><i class="fa-solid fa-user"></i> Ism-familiya</label></div>
+      <div class="field"><input id="fPhone" required placeholder=" " inputmode="tel"><label><i class="fa-solid fa-phone"></i> Telefon</label></div>
+    </div>
+    <div class="field"><input id="fMail" type="email" required placeholder=" "><label><i class="fa-solid fa-envelope"></i> Email</label></div>
+    <div class="field sel"><select id="fRoom"></select></div>
+    <div class="row">
+      <div class="field"><input id="fIn" type="date" required></div>
+      <div class="field"><input id="fOut" type="date" required></div>
+    </div>
+    <div class="extras">
+      <label class="ex"><input type="checkbox" data-p="15"><span><i class="fa-solid fa-mug-hot"></i> Nonushta +$15</span></label>
+      <label class="ex"><input type="checkbox" data-p="25"><span><i class="fa-solid fa-car"></i> Transfer +$25</span></label>
+      <label class="ex"><input type="checkbox" data-p="40"><span><i class="fa-solid fa-spa"></i> Spa +$40</span></label>
+      <label class="ex"><input type="checkbox" data-p="55"><span><i class="fa-solid fa-sailboat"></i> Yaxta sayri +$55</span></label>
+    </div>
+    <div class="total"><span id="nights"><i class="fa-solid fa-moon"></i> 0 kecha</span><strong id="total">$0</strong></div>
+    <p class="err" id="err"></p>
+    <button class="btn wide" type="submit"><i class="fa-solid fa-paper-plane"></i> Band qilishni tasdiqlash</button>
+  </form>
+</section>
+
+<footer>
+  <div class="fgrid">
+    <div>
+      <a href="#home" class="logo"><i class="fa-solid fa-crown"></i> Aurelia Bay</a>
+      <p>Dengiz bo'yidagi sokin hashamat. Har bir mehmon biz uchun mehmon emas, oila a'zosi.</p>
+      <div class="soc">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4><i class="fa-solid fa-link"></i> Tezkor havolalar</h4>
+      <a href="#about"><i class="fa-solid fa-angle-right"></i> Biz haqimizda</a>
+      <a href="#rooms"><i class="fa-solid fa-angle-right"></i> Xonalar va Villalar</a>
+      <a href="#dining"><i class="fa-solid fa-angle-right"></i> Restoranlar</a>
+      <a href="#offers"><i class="fa-solid fa-angle-right"></i> Maxsus aksiyalar</a>
+      <a href="#gallery"><i class="fa-solid fa-angle-right"></i> Galereya</a>
+    </div>
+    <div>
+      <h4><i class="fa-solid fa-address-book"></i> Aloqa ma'lumotlari</h4>
+      <p><i class="fa-solid fa-location-dot"></i> Sohil ko'chasi 12, Toshkent</p>
+      <p><i class="fa-solid fa-phone"></i> +998 90 123 45 67</p>
+      <p><i class="fa-solid fa-envelope"></i> hello\@aureliabay.uz</p>
+      <p><i class="fa-solid fa-clock"></i> Qabulxona: 24/7 ochiq</p>
+    </div>
+    <div>
+      <h4><i class="fa-solid fa-envelope-open-text"></i> Yangiliklar</h4>
+      <p>Chegirmalardan va maxsus takliflardan birinchi bo'lib xabar toping.</p>
+      <form class="news" id="news">
+        <input type="email" placeholder="Email manzilingiz" required>
+        <button class="btn small" aria-label="Obuna"><i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+      <div class="pay-icons">
+        <i class="fa-brands fa-cc-visa" title="Visa"></i>
+        <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+        <i class="fa-brands fa-cc-apple-pay" title="Apple Pay"></i>
+        <i class="fa-solid fa-credit-card" title="Uzcard / Humo"></i>
+      </div>
+    </div>
+  </div>
+  <div class="copy">© 2026 Aurelia Bay Hotel & Resort. Barcha huquqlar himoyalangan.</div>
+</footer>
+
+<button id="toTop" aria-label="Yuqoriga"><i class="fa-solid fa-rocket"></i></button>
+<div id="lightbox"><button id="lbClose" aria-label="Yopish"><i class="fa-solid fa-xmark"></i></button><img alt=""></div>
+<div id="modal">
+  <div class="card">
+    <i class="fa-solid fa-circle-check"></i>
+    <h3>Rahmat! Xona band qilindi</h3>
+    <p id="modalText"></p>
+    <button class="btn" id="modalOk"><i class="fa-solid fa-thumbs-up"></i> Ajoyib</button>
+  </div>
+</div>
+<div id="toast"></div>
+<canvas id="confetti"></canvas>
+
+<script src="scritp.js"></script>
+</body>
+</html>
